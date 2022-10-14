@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="navBar">
+      <a href="#" class="button-30"><p>Home</p></a>
+      <a href="./page/begudes.html" class="button-30"><p>Bebidas</p></a>
+      <div>
+        <img src="./img/index/logo.png" class="navIcon"/>
+      </div>
+      <a href="./page/caliente.html" class="button-30"><p>Caliente</p></a>
+      <a href="./page/frio.html" class="button-30"><p>Frio</p></a>
+      
+      
+    </div>
+
+    <div class="container-logo">
+        <div class="logo">
+            <h1>Taco Truck y Crepes</h1> 
+            <img src="./img/index/logo2.png" />
+            
+        </div>
+    </div>
+
+
+    <div class="slider-container">
+        <div class="w3-content w3-section">
+              <img src="./img/caliente/crepes2.jpeg" class="mySlides"/>
+              
+              <img src="./img/frio/crepes1.jpeg" class="mySlides"/>
+
+              <img src="./img/begudes/bebidas.jpg" class="mySlides"/>
+        </div>
+    </div>
+
+    <div class="galeria">
+      <img src="./img/index/dimitri-photography-jMgoWJKnBcw-unsplash.jpg" alt="">
+      <img src="./img/index/harry-gillen-b2gdRynjL9Q-unsplash.jpg" alt="">
+      <img src="./img/index/jarritos-mexican-soda-jaoMrsp-8Zs-unsplash.jpg" alt="">
+      <img src="./img/index/nick-hillier-ozKgHSxluxQ-unsplash.jpg" alt="">
+    </div>
+
+
+
+<script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+          myIndex = 1
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); 
+  }
+</script>
+</body>
+</html>
