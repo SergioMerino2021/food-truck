@@ -25,12 +25,40 @@
     border: solid 2px rgba(92, 92, 92, 0.566);
     margin: auto;
     
+}
+
+.carta-texto-contenido{
+    position: absolute;
     
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.80);
+    /* display: none; */
+    margin: auto;
+    text-align: center;
+    padding-top: 10%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.carta:hover .carta-texto-contenido{
+    opacity: 1;
+}
+
+.carta-texto{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
 }
 .carta img{
-    
+    padding-top: 15px;
     height: 300px;
-    width: 100%;
+    max-width: 90%;
     
 }
 .carta-precio{
@@ -41,6 +69,7 @@
     padding: 10px 25px;
     border-bottom-right-radius: 15px;
     color: aliceblue;
+    z-index: 999;
     
 }
 .carta-titulo{
