@@ -4,147 +4,207 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1b52af1d87.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css" type="text/css"/>
     <link rel="stylesheet" href="../css/cartas.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/cartasNew.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/navbar.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/fondoBebidas.css" type="text/css"/>
     <link rel="icon" type="image/x-icon" href="../img/index/logo.ico">
+    <script src="../js/navbar.js"></script>
     <title>Crepe Truck</title>
 </head>
 <body>
-    <div class="navBar">
-      <a href="../index.html" class="button"><p>Home</p></a>
-      <a href="#" class="button"><p>Bebidas</p></a>
- 
-        <img src="../img/index/logo.png" class="navIcon"/>
 
-      <a href="./caliente.html" class="button"><p>Caliente</p></a>
-      <a href="./frio.html" class="button"><p>Frio</p></a>
-      
-      
+    <div class="openNav">
+        <h1 class="bebida">BEBIDAS <i class="fa-solid fa-glass-water"></i></h1>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    
+
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <div class="overlay-content">
+            <li ><a href="../index.html" ><p>Home</p></a></li>
+            <li><a href="#" ><p>Bebidas</p></a></li>
+            <li><a href="./caliente.html"><p>Caliente</p></a></li>
+            <li><a href="./frio.html"><p>Frio</p></a></li>
+        </div>
     </div>
 
-
     <div class="cartas-container fondo">
-        <div class="carta">
-            <img src="../img/begudes/nestea.jpg"/>
-            <h3 class="carta-titulo">Nestea</h3>
-            <p  class="carta-precio">0,85€</p>
-            <div class="carta-texto-contenido">
-                <div class="carta-texto">
-                    <h3>Cantidad:</h3>
-                    <p>- 350ml</p>
-                    <br>
+
+        <div class="card">
+            <div class="image">
+                <img class="noexception" src="../img/begudes/nestea.jpg"/>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h3>Nestea</h3>
                     <p>Nestea es mejor que ...</p>
                     <p>7UP 😜</p>
                 </div>
+                <div class="price">
+                    <p>0,85€</p>
+                </div>
+                <div class="btn">
+                    
+                    <button class="tooltip btn2"><i class="fa-solid fa-cart-shopping"></i>
+                        <span class="tooltiptext">Comprame</span>
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="carta">
-            <img src="../img/begudes/cocacola.png"/>
-            <h3 class="carta-titulo">Cocacola</h3>
-            <p  class="carta-precio">0,85€</p>
-            <div class="carta-texto-contenido">
-                <div class="carta-texto">
-                    <h3>Cantidad:</h3>
-                    <p>- 350ml</p>
-                    <br>
+
+
+
+        <div class="card">
+            <div class="image">
+                <img class="noexception" src="../img/begudes/cocacola.png"/>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h3>Cocacola</h3>
                     <p>CocaCola original, no marca blanca</p>
                 </div>
+                <div class="price">
+                    <p>0,85€</p>
+                </div>
+                <div class="btn">
+                    
+                    <button class="tooltip btn2"><i class="fa-solid fa-cart-shopping"></i>
+                        <span class="tooltiptext">Comprame</span>
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="carta">
-            <img src="../img/begudes/bebidas.jpg"/>
-            <h3 class="carta-titulo">Fanta</h3>
-            <p  class="carta-precio">0,80€</p>
-            <div class="carta-texto-contenido">
-                <div class="carta-texto">
-                    <h3>Cantidad:</h3>
-                    <p>- 350ml</p>
-                    <br>
+
+        
+
+
+        <div class="card">
+            <div class="image">
+                <img class="noexception" src="../img/begudes/bebidas.jpg"/>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h3>Fanta</h3>
                     <p>Trina con gas</p>
                 </div>
+                <div class="price">
+                    <p>0,80€</p>
+                </div>
+                <div class="btn">
+                    
+                    <button class="tooltip btn2"><i class="fa-solid fa-cart-shopping"></i>
+                        <span class="tooltiptext">Comprame</span>
+                    </button>
+                </div>
             </div>
         </div>
 
-        <div class="carta">
-            <img src="../img/begudes/brooke-lark-HjWzkqW1dgI-unsplash.jpg"/>
-            <h3 class="carta-titulo">Agua</h3>
-            <p  class="carta-precio">1,20€</p>
-            <div class="carta-texto-contenido">
-                <div class="carta-texto">
-                    <h3>Cantidad:</h3>
-                    <p>- 1,50l</p>
-                    <br>
+
+        
+        <div class="card">
+            <div class="image">
+                <img class="exception" src="../img/begudes/brooke-lark-HjWzkqW1dgI-unsplash.jpg"/>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h3>Agua</h3>
                     <p>Es agua y nada más</p>
                 </div>
+                <div class="price">
+                    <p>1,20€</p>
+                </div>
+                <div class="btn">
+                    
+                    <button class="tooltip btn2"><i class="fa-solid fa-cart-shopping"></i>
+                        <span class="tooltiptext">Comprame</span>
+                    </button>
+                </div>
             </div>
         </div>
 
-
-        <div class="carta">
-            <img src="../img/begudes/Beer-PNG.png"/>
-            <h3 class="carta-titulo">Cerveza</h3>
-            <p  class="carta-precio">2,60€</p>
-            <div class="carta-texto-contenido">
-                <div class="carta-texto">
-                    <h3>Cantidad:</h3>
-                    <p>- 350ml</p>
-                    <br>
+        
+        <div class="card">
+            <div class="image">
+                <img class="noexception" src="../img/begudes/Beer-PNG.png"/>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h3>Cerveza</h3>
                     <p>Olvida tus problemas sentimentales</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="carta">
-            <img src="../img/begudes/nathan-dumlao-pMW4jzELQCw-unsplash.jpg"/>
-            <h3 class="carta-titulo">Café</h3>
-            <p  class="carta-precio">1,25€</p>
-            <div class="carta-texto-contenido">
-                <div class="carta-texto">
-                    <h3>Ingredientes:</h3>
-                    <p>- Leche de almendra</p>
-                    <p>- Granos de Café de Brasil</p>
-                    <br>
-                    <p>Tomate tu tiempo, que el café acelera.</p>
+                <div class="price">
+                    <p>2,60€</p>
+                </div>
+                <div class="btn">
+                    
+                    <button class="tooltip btn2"><i class="fa-solid fa-cart-shopping"></i>
+                        <span class="tooltiptext">Comprame</span>
+                    </button>
                 </div>
             </div>
         </div>
 
-        <div class="carta">
-            <img src="../img/begudes/nathan-dumlao-pMW4jzELQCw-unsplash.jpg"/>
-            <h3 class="carta-titulo">Café</h3>
-            <p  class="carta-precio">1,25€</p>
-            <div class="carta-texto-contenido">
-                <div class="carta-texto">
-                    <h3>Ingredientes:</h3>
-                    <p>- Leche de almendra</p>
-                    <p>- Granos de Café de Brasil</p>
-                    <br>
+        <div class="card">
+            <div class="image">
+                <img class="noexception" src="../img/begudes/nathan-dumlao-pMW4jzELQCw-unsplash.jpg"/>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h3>Café</h3>
                     <p>Tomate tu tiempo, que el café acelera.</p>
+                </div>
+                <div class="price">
+                    <p>1,25€</p>
+                </div>
+                <div class="btn">
+
+                    <button class="tooltip btn2"><i class="fa-solid fa-cart-shopping"></i>
+                        <span class="tooltiptext">Comprame</span>
+                    </button>
+                    
+                    
                 </div>
             </div>
         </div>
 
-        <div class="carta">
-            <img src="../img/begudes/nathan-dumlao-pMW4jzELQCw-unsplash.jpg"/>
-            <h3 class="carta-titulo">Café</h3>
-            <p  class="carta-precio">1,25€</p>
-            <div class="carta-texto-contenido">
-                <div class="carta-texto">
-                    <h3>Ingredientes:</h3>
-                    <p>- Leche de almendra</p>
-                    <p>- Granos de Café de Brasil</p>
-                    <br>
-                    <p>Tomate tu tiempo, que el café acelera.</p>
-                </div>
-            </div>
-        </div>
 
     </div>
     
     <div class="footer">
-
+        <p>© 2022 Crepe Truck y Tacos</p>
     </div>
     
-
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+     </div>
 </body>
 </html>

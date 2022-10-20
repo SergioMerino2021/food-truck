@@ -5,29 +5,7 @@
     font-family: 'Roboto', sans-serif;
     
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
+
 body{
     background-color: rgb(38, 38, 38);
     background-image: url('https://img.freepik.com/vector-premium/fondo-tacos_622471-30.jpg?w=1080');
@@ -35,33 +13,7 @@ body{
     /* background-repeat: repeat; */
     background-attachment: fixed;
 }
-.navBar2{
-    position: fixed;
-    right: 15px;
-    background-color: #49bc18;
-    padding: 25px;
-    border-radius: 100%;
-}
-.block{
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    
-}
-.navBar-content{
-    
-    display: none;
-}
 
-#idBar:target{
-    display: block;
-}
-
-.navIcon2{
-    font-family: 'Acme', sans-serif;
-    color: white;
-    display: none;
-}
 .container-logo{
     width: 100%;
     height: 80vh;
@@ -179,7 +131,7 @@ body{
 
 
 .slider-container{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     width: 100%;
     /* height: 50vh; */
     display: flex;
@@ -197,7 +149,16 @@ body{
     aspect-ratio: 21/12;
     height: 300px;
 }
-
+.separator{
+    background-color: #36395a;
+    width: 100%;
+    height: 10px;
+}
+.titulo{
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
 .galeria{
     display: flex;
     flex-flow: wrap;
@@ -208,15 +169,24 @@ body{
 }
   
 .galeria img{
-    
+    aspect-ratio: 1/1;
+    flex-shrink: 1;
+    overflow: hidden;
     max-width: 300px;
     padding: 1rem;
+    border-radius: 15% 15%;
 }
 
 .footer{
     width: 100%;
-    height: 100px;
+    
     background-color: #36395A;
+    text-align: center;
+}
+.footer p{
+    color: rgb(197, 197, 197);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /*.fondo{

@@ -4,151 +4,217 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1b52af1d87.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css" type="text/css"/>
     <link rel="stylesheet" href="../css/cartas.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/cartasNew.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/navbar.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/fondoCaliente.css" type="text/css"/>
     <link rel="icon" type="image/x-icon" href="../img/index/logo.ico">
+    <script src="../js/navbar.js"></script>
     <title>Crepe Truck</title>
 </head>
 <body>
-    <div class="navBar">
-      <a href="../index.html" class="button"><p>Home</p></a>
-      <a href="./begudes.html" class="button"><p>Bebidas</p></a>
 
-        <img src="../img/index/logo.png" class="navIcon"/>
-   
-      <a href="#" class="button"><p>Caliente</p></a>
-      <a href="./frio.html" class="button"><p>Frio</p></a>
-      
-      
+    <div class="openNav">
+        <h1 class="hot">CALIENTE <i class="fa-solid fa-fire "></i></h1>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </div>
-        <div class="cartas-container fondo">
-            <div class="carta">
-                <img src="../img/caliente/crepes2.jpeg"/>
-                <h3 class="carta-titulo">Crepe con chocolate</h3>
-                <p  class="carta-precio">2,30€</p>
-                <div class="carta-texto-contenido">
-                    <div class="carta-texto">
-                        <h3>Ingredientes:</h3>
-                        <p>- Chocolate</p>
-
-                        <br>
-                        <p>5% de descuento para los que acaban de salir del Gym</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carta">
-                <img src="../img/caliente/crepes3.jpeg"/>
-                <h3 class="carta-titulo">Crepe al huevo</h3>
-                <p  class="carta-precio">2,50€</p>
-                <div class="carta-texto-contenido">
-                    <div class="carta-texto">
-                        <h3>Ingredientes:</h3>
-                        <p>- Huevo</p>
-                        <p>- Salmon</p>
-                        <br>
-                        <p>Te podemos quitar el salmón si quieres, pero el precio será el mismo</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carta">
-                <img src="../img/caliente/crepes5.jpeg"/>
-                <h3 class="carta-titulo">Crepe de ternera</h3>
-                <p  class="carta-precio">3,50€</p>
-                <div class="carta-texto-contenido">
-                    <div class="carta-texto">
-                        <h3>Ingredientes:</h3>
-                        <p>- Ternera</p>
-                        <p>- Tomate</p>
-                        <p>- Oregano</p>
-                        <br>
-                        <p>Relleno de ternera</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carta">
-                <img src="../img/caliente/crepes6.jpeg"/>
-                <h3 class="carta-titulo">Crepe de pollo</h3>
-                <p  class="carta-precio">3,50€</p>
-                <div class="carta-texto-contenido">
-                    <div class="carta-texto">
-                        <h3>Ingredientes:</h3>
-                        <p>- Pollo</p>
-                        <p>- Tomate</p>
-                        <p>- Oregano</p>
-                        <br>
-                        <p>Lo mismo que el de ternera pero con pollo</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carta">
-                <img src="../img/caliente/crepes7.jpeg"/>
-                <h3 class="carta-titulo">Crepe sorpresa</h3>
-                <p  class="carta-precio">3,95€</p>
-                <div class="carta-texto-contenido">
-                    <div class="carta-texto">
-                        <h3>Ingredientes:</h3>
-                        <p>- A su elección</p>
-                        <br>
-                        <p>Sorpresa para nosotros, no para usted</p>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="carta">
-                <img src="../img/caliente/tacos-calinte.jpg"/>
-                <h3 class="carta-titulo">Taco sorpresa</h3>
-                <p  class="carta-precio">1,50€</p>
-                <div class="carta-texto-contenido">
-                    <div class="carta-texto">
-                        <h3>Ingredientes:</h3>
-                        <p>- A su elección</p>
-                        <br>
-                        <p>La misma broma de antes.</p>
-                        <p>Sorpresa para nosotros, no para usted</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carta">
-                <img src="../img/caliente/tacos-calinte.jpg"/>
-                <h3 class="carta-titulo">Taco sorpresa</h3>
-                <p  class="carta-precio">1,50€</p>
-                <div class="carta-texto-contenido">
-                    <div class="carta-texto">
-                        <h3>Ingredientes:</h3>
-                        <p>- A su elección</p>
-                        <br>
-                        <p>La misma broma de antes.</p>
-                        <p>Sorpresa para nosotros, no para usted</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carta">
-                <img src="../img/caliente/tacos-calinte.jpg"/>
-                <h3 class="carta-titulo">Taco sorpresa</h3>
-                <p  class="carta-precio">1,50€</p>
-                <div class="carta-texto-contenido">
-                    <div class="carta-texto">
-                        <h3>Ingredientes:</h3>
-                        <p>- A su elección</p>
-                        <br>
-                        <p>La misma broma de antes.</p>
-                        <p>Sorpresa para nosotros, no para usted</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
     
-        <div class="footer">
 
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <div class="overlay-content">
+            <li ><a href="../index.html" ><p>Home</p></a></li>
+            <li><a href="./begudes.html" ><p>Bebidas</p></a></li>
+            <li><a href="#"><p>Caliente</p></a></li>
+            <li><a href="./frio.html"><p>Frio</p></a></li>
         </div>
-    
+    </div>
+
+
+    <div class="cartas-container fondo">
+
+        <div class="card">
+            <div class="image">
+                <img class="noexception" src="../img/caliente/crepes2.jpeg"/>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h3>Crepe con chocolate</h3>
+                    <p>5% de descuento para los que acaban de salir del Gym</p>
+                </div>
+                <div class="price">
+                    <p>2,30€</p>
+                </div>
+                <div class="btn">
+                   
+                    <button class="tooltip btn2"><i class="fa-solid fa-cart-shopping"></i>
+                        <span class="tooltiptext">Comprame</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img class="noexception" src="../img/caliente/crepes3.jpeg"/>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h3>Crepe al huevo</h3>
+                    <p>Te podemos quitar el salmón si quieres, pero el precio será el mismo</p>
+                </div>
+                <div class="price">
+                    <p>2,50€</p>
+                </div>
+                <div class="btn">
+                    
+                    <button class="tooltip btn2"><i class="fa-solid fa-cart-shopping"></i>
+                        <span class="tooltiptext">Comprame</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img class="noexception" src="../img/caliente/crepes5.jpeg"/>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h3>Crepe de ternera</h3>
+                    <p>Rellena con todo el amor de la ternera</p>
+                </div>
+                <div class="price">
+                    <p>3,50€</p>
+                </div>
+                <div class="btn">
+                    
+                    <button class="tooltip btn2"><i class="fa-solid fa-cart-shopping"></i>
+                        <span class="tooltiptext">Comprame</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img class="noexception" src="../img/caliente/crepes6.jpeg"/>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h3>Crepe de pollo</h3>
+                    <p>Lo mismo que el de ternera pero con pollo</p>
+                </div>
+                <div class="price">
+                    <p>3,50€</p>
+                </div>
+                <div class="btn">
+                    
+                    <button class="tooltip btn2"><i class="fa-solid fa-cart-shopping"></i>
+                        <span class="tooltiptext">Comprame</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img class="noexception" src="../img/caliente/crepes7.jpeg"/>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h3>Crepe sorpresa</h3>
+                    <p>Sorpresa para nosotros, no para usted</p>
+                </div>
+                <div class="price">
+                    <p>3,95</p>
+                </div>
+                <div class="btn">
+                    
+                    <button class="tooltip btn2"><i class="fa-solid fa-cart-shopping"></i>
+                        <span class="tooltiptext">Comprame</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="card">
+            <div class="image">
+                <img class="noexception" src="../img/caliente/tacos-calinte.jpg"/>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h3>Taco sorpresa</h3>
+                    <p>Sorpresa para nosotros, no para usted</p>
+                </div>
+                <div class="price">
+                    <p>1,50€</p>
+                </div>
+                <div class="btn">
+                    
+                    <button class="tooltip btn2"><i class="fa-solid fa-cart-shopping"></i>
+                        <span class="tooltiptext">Comprame</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="footer">
+        <p>© 2022 Crepe Truck y Tacos</p>
+    </div>
+    <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 
 </body>
 </html>
