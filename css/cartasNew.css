@@ -13,6 +13,7 @@
 
 
 .card{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,6 +26,7 @@
     box-shadow: 9px 10px 23px 0px rgba(0,0,0,0.71);
 }
 .title{
+    text-align: center;
     width: 100%;
 }
 .exception{
@@ -44,14 +46,14 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 0px 30px 0px 30px;
+    padding: 0px 10px 0px 10px;
 }
 
 .card .info h3{
-    height: 100px;
+
   font-size: 30px;
   font-weight: 700;
-  margin-bottom: 5px;  
+  margin: 24px;  
 }
 
 .card .info p{
@@ -60,8 +62,27 @@
     font-weight: 600;
 }
 .card .price{
-    text-align: left;
-    color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+
+    background: rgba( 255, 255, 255, 0.6 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.card .price p{
+    height: fit-content;
+    padding: 10px 20px;
+
 }
 .card .btn{
 
@@ -78,6 +99,7 @@
     background-color: chocolate;
     color: white;
     font-size: 15px;
+    z-index: 0;
 }
 
 
@@ -155,8 +177,6 @@
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    
-    /* Position the tooltip */
     position: absolute;
     z-index: 1;
     bottom: 100%;
